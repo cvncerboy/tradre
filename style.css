@@ -37,19 +37,35 @@ body {
 
 .menu ul {
 	display: flex;
+	justify-content: space-between;
 }
 
 .menu ul li{
 	list-style: none;
-	margin: 0 2em;
+	margin-left: 2em;
+	width: 5em
 }
 
 .menu ul a {
 	text-decoration: none;
 }
 
-.menu ul a:hover {
+.menu ul a:hover, .more .moree li:hover {
 	color: #ccc;
+}
+
+.dropdown {
+	position: relative;
+	top: -0.4em;
+}
+
+.more .moree {
+	display: none;
+	position: absolute;
+}
+
+.more .moree li {
+	margin: 0;
 }
 .container {
 	width: 100%;
